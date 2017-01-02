@@ -30,6 +30,8 @@ set bs=2     " make backspace behave like normal again
 " it is next to ``m`` and ``n`` which I use for navigating between tabs.
 let mapleader = ","
 
+" save as sudo -u www-data
+noremap <Leader>W :w !sudo tee % > /dev/null
 
 " Bind nohl
 " Removes highlight of your last search
